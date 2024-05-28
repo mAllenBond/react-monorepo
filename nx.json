@@ -25,24 +25,9 @@
         "serveStaticTargetName": "serve-static"
       }
     },
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
-    {
-      "plugin": "@nx/playwright/plugin",
-      "options": {
-        "targetName": "e2e"
-      }
-    },
-    {
-      "plugin": "@nx/jest/plugin",
-      "options": {
-        "targetName": "test"
-      }
-    }
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
+    { "plugin": "@nx/playwright/plugin", "options": { "targetName": "e2e" } },
+    { "plugin": "@nx/jest/plugin", "options": { "targetName": "test" } }
   ],
   "generators": {
     "@nx/react": {
@@ -52,14 +37,9 @@
         "linter": "eslint",
         "bundler": "vite"
       },
-      "component": {
-        "style": "@emotion/styled"
-      },
-      "library": {
-        "style": "@emotion/styled",
-        "linter": "eslint"
-      }
+      "component": { "style": "@emotion/styled" },
+      "library": { "style": "@emotion/styled", "linter": "eslint" }
     }
   },
-  "nxCloudAccessToken": "NWE1OTIzMjItYWNhMS00YzY5LTgyMzItYzhkNTliODNkNTVmfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "NDk3M2E0ZGEtNDc2YS00MmQ1LWI3ZjMtOGIzYzJmYzhmYzI3fHJlYWQtd3JpdGU="
 }
